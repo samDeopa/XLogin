@@ -12,15 +12,15 @@ function App() {
         onSubmit={(e) => {
           e.preventDefault();
           if (
-            e.target.elements.username.value.toLowerCase() === "username" ||
+            e.target.elements.username.value.toLowerCase() === "user" ||
             e.target.elements.password.value.toLowerCase() === "password"
           ) {
             const ele = document.getElementById("message");
-            ele.innerText = "Invalid username or password";
-          } else {
-            const ele = document.getElementById("message");
             ele.innerText = "Welcome, user";
             setLoggedIn(true);
+          } else {
+            const ele = document.getElementById("message");
+            ele.innerText = "Invalid username or password";
           }
         }}
       >
