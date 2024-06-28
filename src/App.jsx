@@ -28,7 +28,7 @@ function App() {
         <p id="message"></p>
         {!loggedIn && (
           <>
-            <label htmlFor="">UserName :</label>
+            <label htmlFor="">Username :</label>
             <input name="username" required type="text" />
             <br />
             <label htmlFor="">Password :</label>
