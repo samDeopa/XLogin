@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
         onSubmit={(e) => {
           e.preventDefault();
           if (
-            e.target.elements.username.value.toLowerCase() === "user" ||
+            e.target.elements.username.value.toLowerCase() === "user" &&
             e.target.elements.password.value.toLowerCase() === "password"
           ) {
             const ele = document.getElementById("message");
